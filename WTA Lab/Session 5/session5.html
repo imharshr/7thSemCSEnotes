@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Session 5</title>
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <div>
+            <h1 style="color: blueviolet;">Find left most vowel</h1>
+            <p>Enter a string: <input type='text' id='stringVal'></p>
+            <input type=button value="Submit" onclick="alert(findvowel(document.getElementById('stringVal').value))">
+        </div>
+        <div>
+            <h1 style="color: blueviolet;">Reverse a number</h1>
+            <p>Enter a number: <input type="number" id='numVal'></p>
+            <input type=button value="Submit" onclick="alert(reverse(document.getElementById('numVal').value))">
+        </div>
+    </div>
+    <script>
+        function findvowel(str) {
+            if (str == null || str == '')
+                return ("No String found")
+            for (i = 0; i < str.length; i++) {
+                character = str.charAt(i).toLowerCase();
+                if (character == 'a' || character == 'e' || character == 'i' || character == 'o' || character == 'u')
+                    return ("Left most vowel of string '" + str + "' is at location " + (i + 1));
+                }
+            return ("No vowels found for string '" + str + "'");
+        }
+        function reverse(num) {
+            num = parseInt(num);
+            rnum = 0;
+            temp = num;
+            if (isNaN(num)) {
+                return "invalid number";
+            }
+            while (num != 0) {
+                rnum *= 10;
+                rnum += num % 10;
+                num -= num % 10;
+                num = Math.floor(num / 10);
+            }
+            return "Reverse of " + temp + " is " + rnum;
+        }
+    </script>
+</body>
+
+</html>

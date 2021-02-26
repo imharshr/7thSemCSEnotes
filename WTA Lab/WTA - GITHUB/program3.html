@@ -1,0 +1,80 @@
+<!--
+	3. Write a JavaScript code that displays text “TEXT-GROWING” with increasing font
+	size in the interval of 100ms in RED COLOR, when the font size reaches 50pt it
+	displays “TEXT-SHRINKING” in BLUE color. Then the font size decreases to 5pt.
+-->
+
+<!--<html>
+<body>
+<div style="margin-top: 200px;" align="center">
+<h1 style="font-size: 5px; color: red;"></h1>
+</div>
+<script>
+	var text = document.querySelector('h1');
+	var font = 5;
+	var flag = 0;
+	function inc(){
+		font++;
+		text.style.fontSize = font;
+		text.style.color = "red";
+		text.textContent="TEXT-GROWING";
+		if(font === 50)
+			flag=1;
+	}
+	function dec(){
+		font--;
+		text.style.fontSize = font;
+		text.style.color = "blue";
+		text.textContent="TEXT-SHRINKING";
+		if(font === 5)
+			flag=0;		
+	}
+	var time = setInterval(function(){
+		flag === 1 ? dec() : inc() ;
+	}, 100);
+</script>
+</body>
+</html>-->
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<style>
+		p {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	</style>
+</head>
+
+<body>
+	<p id="demo"></p>
+	<script>
+		var var1 = setInterval(inTimer, 100);
+		var fs = 5;
+		var ids = document.getElementById("demo");
+		function inTimer() {
+			ids.innerHTML = 'TEXT GROWING'; 
+			ids.setAttribute('style', "font-size: " + fs + "pt; color: red"); 
+			fs++;
+			if (fs >= 50) {
+				clearInterval(var1);
+				var2 = setInterval(deTimer, 100);
+			}
+		}
+		function deTimer() {
+			fs--;
+			ids.innerHTML = 'TEXT SHRINKING'; 
+			ids.setAttribute('style', "font-size: " + fs + "pt; color: blue"); 
+			if (fs === 5) {
+				clearInterval(var2);
+				var1 = setInterval(inTimer, 100);
+			}
+		}
+	</script>
+</body>
+
+</html>

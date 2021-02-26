@@ -1,0 +1,73 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<?xml-stylesheet type="text/css" href="program5.css"?>
+<students>
+<student>
+	<name>
+	ADAM J
+	</name>
+	<age>
+	7th Sem
+	</age>
+	<usn>
+	1BG17CS101
+	</usn>
+	<year>
+	2020
+	</year>
+	<branch>
+	CSE
+	</branch>
+	<email>
+	adam@gmail.com
+	</email>
+	<college>
+	BNM Institute of Technology
+	</college>
+</student>
+<student>
+	<name>
+	Bob K
+	</name>
+	<age>
+	7th Sem
+	</age>
+	<usn>
+	1BG17CS102
+	</usn>
+	<year>
+	2020
+	</year>
+	<branch>
+	CSE
+	</branch>
+	<email>
+	bob@gmail.com
+	</email>
+	<college>
+	BNM Institute of Technology
+	</college>
+</student>
+<student>
+	<name>
+	Cerny A
+	</name>
+	<age>
+	7th Sem
+	</age>
+	<usn>
+	1BG17CS103
+	</usn>
+	<year>
+	2020
+	</year>
+	<branch>
+	CSE
+	</branch>
+	<email>
+	cerny@gmail.com
+	</email>
+	<college>
+	BNM Institute of Technology
+	</college>
+</student>
+</students>

@@ -1,0 +1,57 @@
+<!--
+	1. Write a JavaScript to design a simple calculator to perform the following operations:
+	sum, product, difference and quotient.
+-->
+
+<html>
+	<title>CALCULATOR</title>
+	<style>
+		input{
+		background-color:purple;
+		width:100%;
+		border:0;
+		color:white;
+		font-size: xx-large;
+		}
+	</style>
+	<body>		
+		<div align="center">
+			<h2>Calculator</h2>
+			<form name="calculate">
+				<table>
+					<tr>
+						<td colspan="4"> <input type="text" disabled name="get"></td> 
+					</tr>
+
+					<tr>
+						<td> <input type="button" value="1" onclick="calculate.get.value +='1'"></td>
+						<td> <input type="button" value="2" onclick="calculate.get.value +='2'"></td>
+						<td> <input type="button" value="3" onclick="calculate.get.value +='3'"></td>
+						<td> <input type="button" value="+" onclick="calculate.get.value +='+'"></td>
+					</tr>
+
+					<tr>
+						<td> <input type="button" value="4" onclick="calculate.get.value +='4'"></td>
+						<td> <input type="button" value="5" onclick="calculate.get.value +='5'"></td>
+						<td> <input type="button" value="6" onclick="calculate.get.value +='6'"></td>
+						<td> <input type="button" value="-" onclick="calculate.get.value +='-'"></td>
+					</tr>
+				
+					<tr>
+						<td> <input type="button" value="7" onclick="calculate.get.value +='7'"></td>
+						<td> <input type="button" value="8" onclick="calculate.get.value +='8'"></td>
+						<td> <input type="button" value="9" onclick="calculate.get.value +='9'"></td>
+						<td> <input type="button" value="*" onclick="calculate.get.value +='*'"></td>
+					</tr>
+
+					<tr>
+						<td> <input type="reset" value="c"></td>
+						<td> <input type="button" value="0" onclick="calculate.get.value +='0'"></td>
+						<td> <input type="button" value="=" onclick="calculate.get.value =eval(calculate.get.value)"></td>
+						<td> <input type="button" value="/" onclick="calculate.get.value +='/'"></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,38 @@
+students {
+	background: black;
+	margin-left: 400px;
+	margin-right: 400px;
+}
+student {
+	display: block;
+	border: 2px solid cyan;
+	margin: 50px;
+	color: white;
+	padding: 20px;
+}
+student:hover {
+	background: cyan;
+	display: block;
+	border: 2px solid black;
+	margin: 50px;
+	color: black;
+	padding: 20px;
+}
+name {
+	display: block;
+}
+age {
+	display: block;
+}
+usn {
+	display: block;
+}
+branch {
+	display: block;
+}
+college {
+	display: block;
+}
+year {
+	display: block;
+}

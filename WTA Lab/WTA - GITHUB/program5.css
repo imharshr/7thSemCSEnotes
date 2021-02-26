@@ -1,0 +1,14 @@
+students {
+	background: black;
+	margin-left: 400px;
+	margin-right: 400px;
+}
+student {
+	display: block;
+	background-color: white;
+	border: 5px solid cyan;
+	margin: 50px;
+}
+name, age, usn, branch, college, year {
+	display: block;
+}

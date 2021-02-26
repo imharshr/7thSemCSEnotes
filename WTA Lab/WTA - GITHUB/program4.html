@@ -1,0 +1,69 @@
+<!--
+  4. Develop and demonstrate a HTML5 file that includes JavaScript script that uses
+  functions for the following problems:
+  a. Parameter: A string
+  b. Output: The position in the string of the left-most vowel
+  c. Parameter: A number
+  d. Output: The number with its digits in the reverse order
+-->
+
+<!--<html>
+  <body>
+    <input type="text">
+    <button onclick="runScript()">Submit</button>
+    <p></p>
+    <script>
+    function runScript(){
+      var str = document.querySelector('input').value;
+      var num = parseInt(str);
+      if(num){
+        document.querySelector('p').textContent = '';
+        document.querySelector('p').insertAdjacentHTML('beforeend', num.toString().split('').reverse().join(''));
+      } else {
+        str = str.toLowerCase();
+        var arr = str.split('');
+        for(var i=0; i<arr.length; i++){
+          if(arr[i]=='a' || arr[i]=='e' || arr[i]=='i' || arr[i]=='o' || arr[i]=='u'){
+            i++;
+            document.querySelector('p').textContent = '';
+            document.querySelector('p').insertAdjacentHTML('beforeend', 'Input string is: ' +str+ ' Leftmost vowel: ' +arr[i-1]+  ' Position: ' +i);
+            break;
+          }
+        }
+      }
+    }
+    </script>
+  </body>
+</html>-->
+
+<!DOCTYPE HTML>
+<html>
+
+<body>
+  <script type="text/javascript">
+    var str = prompt("Enter the Input", "");
+    if (!(isNaN(str))) {
+      var num, rev = 0, remainder;
+      num = parseInt(str);
+      while (num != 0) {
+        remainder = num % 10;
+        num = parseInt(num / 10);
+        rev = rev * 10 + remainder;
+      }
+      alert("Reverse of " + str + " is " + rev);
+    }
+    else {
+      str = str.toUpperCase();
+      for (var i = 0; i < str.length; i++) {
+        var chr = str.charAt(i);
+        if (chr == 'A' || chr == 'E' || chr == 'I' || chr == 'O' || chr == 'U') 
+          break;
+      }
+      if (i < str.length)
+        alert("The position of the left most vowel is " + (i + 1));
+      else
+        alert("No vowel found in the entered string");
+    }
+  </script>
+</body>
+</html>
